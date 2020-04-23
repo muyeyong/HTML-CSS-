@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- id： #
+    class： 。
+   -->
+  <div class="xxx"></div>
+  <div id="xxx"></div>
+
+  <!-- 子节点 : div>p
+    兄弟节点 div:span
+  -->
+  <div>
+    <p></p>
+  </div>
+
+  <div></div>
+  <span></span>
+
+  <!-- 重复 
+     div*3
+   -->
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <!-- 分组
+     div>(ul>li>a)+div>p
+   -->
+  <div>
+    <ul>
+      <li><a href=""></a></li>
+    </ul>
+    <div>
+      <p></p>
+    </div>
+  </div>
+  <!-- 属性
+      a[href='www.xxxx.com' name='xxx']
+     -->
+  <a href="www.xxxx.com" name="xxx"></a>
+
+  <!-- 编号、自增符
+        一个$代表一位数，两个$代表两位数,形成$(1) $(01)
+        如果想自定义从几开始递增就用: $@+数字
+
+        a$$*2
+
+        a$@3*3
+
+        ul>li.test$*3
+
+     -->
+  <a01></a01>
+  <a02></a02>
+
+  <a3></a3>
+  <a4></a4>
+  <a5></a5>
+
+  <ul>
+    <li class="test3"></li>
+    <li class="test4"></li>
+    <li class="test5"></li>
+  </ul>
+
+  <!-- 文本
+       {} ：可以在里面填写内容
+       a{哈哈哈}
+     -->
+  <a href="">哈哈哈</a>
+
+
+
+</body>
+
+</html>

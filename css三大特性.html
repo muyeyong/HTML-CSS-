@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css三大特性</title>
+  <style>
+    /* 重叠性 */
+    /* div {
+      color: skyblue;
+    }
+
+    div {
+      color: pink;
+    } */
+
+    /* 继承性 */
+    /* 继承那些属性？
+    文字属性 line-height
+     */
+    /* div {
+      font: 32px/1.5 'Microsofa yahei';
+      color: pink;
+    } */
+
+    /* 权重 */
+    .nav {
+      color: skyblue;
+    }
+
+    /* 
+    div {
+      color: pink !important;
+    }
+
+    div>span {
+      display: block;
+    } */
+    /* .nav {
+      color: red;
+    }
+
+    span {
+      color: pink;
+    } */
+
+    .nav a {
+      color: red;
+      text-decoration: none;
+    }
+
+    a {
+      color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <a href="#">上帝说我帅的很</a>
+  </div>
+</body>
+
+</html>
