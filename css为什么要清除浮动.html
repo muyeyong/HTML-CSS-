@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css为什么需要清除浮动</title>
+  <style>
+    .box {
+      width: 500px;
+      background-color: skyblue;
+    }
+
+    .div1 {
+      height: 300px;
+      width: 100px;
+      float: left;
+      background-color: pink;
+    }
+
+    .div2 {
+      height: 400px;
+      width: 200px;
+      float: left;
+      background-color: purple;
+
+    }
+
+    .clearfix:after {
+      content: '.';
+      height: 0;
+      display: block;
+      clear: both;
+    }
+
+    .clear {
+      clear: both
+    }
+
+    .footer {
+      height: 100px;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box clearfix">
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+  </div>
+  <div class="footer">footer</div>
+
+</body>
+
+</html>
