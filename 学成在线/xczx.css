@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.header {
+    height: 42px;
+    background-color: pink;
+    margin: 30px auto;
+}
+
+.log {
+    width: 195px;
+    height: 42px;
+    background-color: purple;
+    float: left;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0px 10px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    font-size: 18px;
+    color: #050505;
+    line-height: 42px;
+}
