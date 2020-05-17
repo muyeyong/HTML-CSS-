@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+.body {
+    background-color: #f3f5f7;
+}
+
 li {
     list-style: none;
 }
@@ -18,14 +22,12 @@ a {
 
 .header {
     height: 42px;
-    background-color: pink;
     margin: 30px auto;
 }
 
 .log {
     width: 195px;
     height: 42px;
-    background-color: purple;
     float: left;
 }
 
@@ -36,13 +38,57 @@ a {
 
 .nav ul li {
     float: left;
-    margin: 0px 10px;
+    margin: 0px 15px;
 }
 
 .nav ul li a {
     display: block;
     height: 42px;
+    padding: 0 10px;
     font-size: 18px;
     color: #050505;
     line-height: 42px;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+
+/* search部分 */
+
+.search {
+    float: left;
+    height: 42px;
+    width: 412px;
+    margin-left: 50px;
+}
+
+.search input {
+    float: left;
+    height: 40px;
+    width: 360px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    color: #bfbfbf;
+    font-size: 14px;
+    text-indent: 2em;
+}
+
+.search button {
+    float: left;
+    height: 42px;
+    width: 50px;
+    border: 0;
+    background-image: url(./imgs/bt.png);
+}
+
+
+/* 用户头像 */
+
+.user {
+    float: right;
+    font-size: 14px;
+    color: #666;
+    margin-right: 36px;
 }
