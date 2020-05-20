@@ -92,3 +92,38 @@ a {
     color: #666;
     margin-right: 36px;
 }
+
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 421px;
+    background: url(./imgs/banner2.png) no-repeat top center;
+}
+
+.subnav {
+    height: 421px;
+    width: 191px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+    height: 43px;
+    padding: 0px 20px;
+    line-height: 43px;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav ul li a span {
+    float: right;
+}
+
+.subnav ul li a:hover {
+    color: #0d4a89;
+}
