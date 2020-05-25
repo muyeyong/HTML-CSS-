@@ -107,6 +107,7 @@ a {
     height: 421px;
     width: 191px;
     background-color: rgba(0, 0, 0, 0.3);
+    float: left;
 }
 
 .subnav ul li {
@@ -125,5 +126,57 @@ a {
 }
 
 .subnav ul li a:hover {
-    color: #0d4a89;
+    color: #00b4ff;
+}
+
+
+/* course 模块 */
+
+.course {
+    width: 228px;
+    height: 300px;
+    float: right;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.course h2 {
+    font-size: 18px;
+    height: 49px;
+    width: 228px;
+    color: #fff;
+    line-height: 49px;
+    text-align: center;
+    background-color: #9bceea;
+}
+
+.bd {
+    padding: 0 18px;
+}
+
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd .more {
+    display: block;
+    height: 38px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #22b0ff;
 }
