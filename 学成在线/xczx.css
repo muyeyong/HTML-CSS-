@@ -1,3 +1,16 @@
+/* css书写顺序 */
+
+
+/* 遵循以下顺序
+
+1： 布局定位属性：display/position/float/clear/visibility/overfolw
+
+2: 自身属性： width/height/margin/padding/border/background
+
+3: 文本属性： color/font/text-decoration/text-align/vertial-align/white-space/breack-word
+
+4: 其他属性(CSS3): content/cursor/border-radius/box-shadow/text/shadow */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -179,4 +192,14 @@ a {
     line-height: 38px;
     text-align: center;
     border: 1px solid #22b0ff;
+}
+
+
+/* 精品推荐 */
+
+.goods {
+    height: 60px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
