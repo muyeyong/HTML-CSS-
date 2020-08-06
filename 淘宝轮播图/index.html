@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝轮播图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .tb-promo{
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+        }
+       img{
+            height: 280px;
+            width: 520px;            
+        }
+        .pre, .next{
+            position: absolute;
+            top: 50%;
+            bottom: -15px;
+            height: 30px;
+            width: 20px;
+            background: rgba(0,0,0,.3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+        }
+        .pre{
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .next{
+            right: 0;
+            text-decoration: none;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .promo-nav{
+            position: absolute;
+            left: 50%;
+            bottom: 13px;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background: rgba(255,255,255,.3);
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tb-promo">
+        <img src="./imgs/tb.png" alt="">
+        <a href="#" class="pre">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+        <div class="promo-nav">
+            <!-- <ul>
+                <li></li>
+            </ul> -->
+        </div>
+    </div>
+</body>
+</html>
