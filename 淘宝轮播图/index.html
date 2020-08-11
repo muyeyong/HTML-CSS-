@@ -9,6 +9,9 @@
             margin: 0;
             padding: 0;
         }
+        li{
+            list-style: none;
+        }
         .tb-promo{
             position: relative;
             width: 520px;
@@ -26,6 +29,7 @@
             height: 30px;
             width: 20px;
             background: rgba(0,0,0,.3);
+            text-decoration: none;
             text-align: center;
             line-height: 30px;
             color: #fff;
@@ -37,7 +41,6 @@
         }
         .next{
             right: 0;
-            text-decoration: none;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
         }
@@ -51,6 +54,17 @@
             background: rgba(255,255,255,.3);
             border-radius: 7px;
         }
+        .promo-nav li{
+            float: left;
+            background-color: #fff;
+            margin: 3px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        .promo-nav   .selcted{
+            background-color: #ff5000;
+        }
     </style>
 </head>
 <body>
@@ -58,11 +72,13 @@
         <img src="./imgs/tb.png" alt="">
         <a href="#" class="pre">&lt;</a>
         <a href="#" class="next">&gt;</a>
-        <div class="promo-nav">
-            <!-- <ul>
-                <li></li>
-            </ul> -->
-        </div>
+            <ul class="promo-nav">
+               <li class="selcted"></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+            </ul>
     </div>
 </body>
 </html>
