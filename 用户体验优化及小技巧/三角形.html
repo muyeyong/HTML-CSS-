@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角形</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .div1{
+            width: 0;
+            height: 0;
+            border: 10px solid pink ;
+            border-bottom-color: skyblue;
+            border-top-color: red;
+            border-left-color: gray;
+        }
+        .div2{
+            position: relative;
+            width: 50px;
+            height: 100px;
+            /* background-color: pink; */
+            background-color: #fff;
+        }
+        .div3{
+            position: absolute;
+            right: 10px;
+            top: -10px;
+            height: 0;
+            width: 0;
+            border: 5px solid transparent;
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2">
+        <div class="div3">
+
+        </div>
+    </div>
+</body>
+</html>
