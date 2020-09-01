@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 主要是根据文档结构来选择元素 */
+         section div:first-child{
+            color: red;
+        }
+        ul li:first-child{
+            color: blue;
+        }
+        ul li:last-child{
+            color: chartreuse;
+        } */
+        /* nth-child(n)
+            n可以是数字、关键字和公式
+            数字：选择第几个元素
+            关键字： even偶数 odd奇数
+            公式： 2n 2n+1 5n -n+5 n+5
+         */
+        /* ul li:nth-child(3){
+            color: pink;
+            list-style: none;
+        } */
+        ul li:nth-child(even){
+            color: pink;
+        }
+        /* 
+        first-of-type first-child区别
+        first-child： 对全部子元素进行排序，在选择第几个元素，在比较类型（例如是不是div）
+        first-of-type：对特定的元素进行排序，在选出第几个元素
+       */
+        section div:first-child{
+            color: pink;
+        }
+        section div:first-of-type{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1娃哈哈</div>
+        <div>2娃哈哈</div>
+        <div>3娃哈哈</div>
+    </section>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+    </ul>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+</html>

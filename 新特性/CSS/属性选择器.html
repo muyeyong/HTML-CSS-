@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input[type]{
+            color: pink;
+        } */
+        /* input[type=password]{
+            color: pink;
+        } */
+        div[class^=icon]{
+            color: skyblue;
+        }
+        div[class$=data]{
+            color: red;
+        }
+        div[class*=_]{
+            color: springgreen;
+        }
+				div[class~=key]{
+					color: coral;
+				}
+    </style>
+</head>
+<body>
+    <!-- [attr] -->
+  <!-- <input type="text" value="哇哈哈哈">
+  <input type="text"> -->
+  <!-- [attr=value] -->
+  <!-- <input type="text">
+  <input type="password"> -->
+  <div class="icon1">icon1</div>
+  <div class="icon2">icon2</div>
+  <div class="icon3">icon3</div>
+  <div class="icon4">icon4</div>
+  <div>哇哈哈哈</div>
+
+	<div class="1$data">1</div>
+	<div class="2$data">2</div>
+	<div class="3$data">3</div>
+	<div class="4$data">4</div>
+
+   <div class="1_1">5</div>
+   <div class="2_2">6</div>
+   <div class="3_3">7</div>
+   <div class="4_4">8</div> 
+
+   <div class="key fed">9</div>
+   <div class="key dff">10</div>
+   <div class="key dfe">11</div>
+</body>
+</html>
