@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ::before  ::after 创建一个元素，但是属于行内元素
+        新创建的元素在文档树中找不到
+        语法： element::before{}
+        必须包含content属性
+        权重同标签选择器： 1
+        */
+        .demo{
+            width: 500px;
+            height: 200px;
+            background: pink;
+        }
+        .demo::before{
+            content: '我';
+        }
+        .demo::after{
+            content: '长沙吴彦祖';
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">是</div>
+</body>
+</html>

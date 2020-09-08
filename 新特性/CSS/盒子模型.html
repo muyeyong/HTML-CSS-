@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css3中可以通过 box-sizing来指定盒子模型： content-box border-box
+            content-box: 默认，盒子大小为 width + padding + border
+            box-sizing: 盒子大小为width，不会因为padding、border把盒子撑大
+         */
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 10px;
+            padding: 10px;
+            border: 10px solid skyblue;
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            background-color: pink;
+            margin: 10px;
+            padding: 10px;
+            border: 10px solid skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+    <div class="div2">
+
+    </div>
+</body>
+</html>
