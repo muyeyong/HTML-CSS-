@@ -97,5 +97,29 @@
     width: 78px;
     background: #b1191a;
 }
+.hotwords{
+    position: absolute;
+    top: 69px;
+    left: 349px;
+}
+
+.hotwords ul li{
+    float: left;
+    margin: 0 10px;
+}
+.hotwords ul li:first-child a{
+    color: #c81623;
+}
+.shopcars{
+    position: absolute;
+    top: 23px;
+    right: 64px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #f7f7f7;
+    border: 1px solid #fff;
+}
 
 
