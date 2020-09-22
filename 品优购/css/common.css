@@ -226,17 +226,38 @@
 }
 .service ul li{
     float: left;
-    width: 165px;
+    width: 240px;
     height: 65px;
 }
 .service ul li h5{
+    float: left;
     width: 50px;
     height: 50px;
-    background: url(../imags/icons.png) -251px -3px no-repeat;
+    margin-right: 8px;
 }
+.service ul li:nth-child(1) h5{ 
+    background: url(../imags/icons.png) -253px -3px no-repeat;
+}
+.service ul li:nth-child(2) h5{ 
+    background: url(../imags/icons.png) -255px -54px no-repeat;
+}
+.service ul li:nth-child(3) h5{ 
+    background: url(../imags/icons.png) -257px -106px no-repeat;
+}
+.service ul li:nth-child(4) h5{ 
+    background: url(../imags/icons.png) -257px -156px no-repeat;
+}
+.service ul li:nth-child(5) h5{ 
+    background: url(../imags/icons.png) -256px -208px no-repeat;
+}
+
 .service ul li .txt{
-    
+   font-size: 14px;
 }
+.service ul li .txt p{
+    font-size: 12px;
+}
+
 /* footer end  */
 
 
