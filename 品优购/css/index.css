@@ -1,0 +1,26 @@
+.main{
+    width: 990px;
+    height: 467px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.main .focus{
+    position: relative;
+    width: 720px;
+    height: 458px;
+}
+
+.focus .pre{
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+.focus .next{
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    color: #fff;
+    cursor: pointer;
+}
