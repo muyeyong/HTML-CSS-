@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奔跑吧，熊大</title>
+    <style>
+        body{
+            background: #ccc;
+        }
+        .title{
+            height: 10px;
+            color: pink;
+            margin: 20% auto;
+        }
+        .bg1{ 
+            /* 白色 */
+            position: absolute;
+            width: 100%;
+            top: 60%;
+            transform: perspective(1500px) translate3d(0,0,500px);
+        }
+        .bg2{
+            /* 黑色 */
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: perspective(1500px) translate3d(0,0,50px);
+        }
+        .bear{
+            position: absolute;
+            top: 65%;
+            width: 200px;
+            height: 100px;
+            background: url(./imgs/bear.png) no-repeat;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: bear .5s steps(8) infinite, move 5s linear forwards;
+        }
+
+        @keyframes bear{
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: -1600px 0;
+            }
+        }
+        @keyframes move{
+            0%{
+                left: 0;
+            }
+            100%{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        @keyframes say{
+            0%{
+
+            }
+            100%{
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">上帝说我帅的很</div>
+        <img class="bg2" src="./imgs/bg2.png" alt="">
+        <img class="bg1" src="./imgs/bg1.png" alt="" >
+        <div class="bear"></div>
+    </div>
+</body>
+</html>
