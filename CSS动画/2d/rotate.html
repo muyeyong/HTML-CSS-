@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .rotate{
+            width: 100px;
+            height: 100px;
+            transform-origin:left bottom ;
+            margin: 100px auto;
+            background: pink;
+            transition: all 1s;
+
+        }
+        .rotate:hover{
+            transform: rotate(90deg);
+        }
+    </style>
 </head>
 <body>
+    <div class="rotate"></div>
 </body>
 </html>
