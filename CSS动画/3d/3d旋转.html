@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 200px;
+            transform-style: preserve-3d;
+        }
+        .rotate3dX, .rotate3dY, .rotate3dZ{
+            width: 300px;
+            height: 300px;
+            transition: all 1s;
+        }
+        .rotate3dX{
+            margin: 100px auto;
+            background: pink;
+        }
+        .rotate3dY{
+            margin: 200px auto;
+            background: red;
+        }
+        .rotate3dZ{
+            margin: 300px auto;
+            background: skyblue;
+        }
+        .rotate3dX:hover{
+            transform: rotateX(45deg);
+        }
+        .rotate3dY:hover{
+            transform: rotateY(45deg);
+        }
+        .rotate3dZ:hover{
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate3dX"></div>
+    <div class="rotate3dY"></div>
+    <div class="rotate3dZ"></div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <style>
+        body{
+            background: #ccc;
+            
+        }
+        .mask{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background:pink;
+            z-index: 1;
+        }
+        .mask input{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           width: 200px;
+           height: 30px;
+        }
+       .home{
+           width: 100%;
+           height: 100%;
+           display: none;
+           perspective: 600px;
+       }
+        .home .box{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 300px auto;
+            transition: all .4s;
+            transform-style: preserve-3d;
+            z-index: 1;
+        }
+        .box:hover{
+            transform: rotateY(-180deg);
+        }
+        .front, .back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            
+        }
+        .front{
+            overflow: hidden;
+            background: red;
+            transform: translateZ(1px);
+            z-index: 1;
+        }
+        .front img{
+            height: 100%;
+            width: 100%;
+        }
+       
+        
+        .back{
+            background: pink;
+            transform: rotateY(180deg);
+        }
+        .back h5{
+           position: absolute;
+           top: 25%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           font-size: 50px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="mask">
+        <form action="" onsubmit="return false">
+            <input type="text" placeholder="请输入你的姓名" autofocus >
+        </form>
+    </div>
+    <div class="home">
+        <div class="box">
+            <div class="front">
+                <!-- <img src="./imgs/djh.JPG" alt=""> -->
+            </div>
+            <div class="back">
+                <!-- <h5>怂</h5> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
