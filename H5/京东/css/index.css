@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+
+input {
+    -webkit-appearance: none;
+}
+
+
+/*禁用长按页面时的弹出菜单*/
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+img{
+    vertical-align:middle;
+}
+
+li{
+    list-style: none;
+}
+
+.active_color{
+    background-color: #fa2c19 !important;
+}
+a{
+    text-decoration: none;
+}
+.download{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background:#232326;
+}
+.download_close{
+    float: left;
+    width: 16px;
+    height: 50px;
+    margin-left:2.5% ;
+}
+.download_close img{
+    width: 100%;
+}
+
+.download_logo{
+    float: left;
+    width: 35px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 5%;
+    margin-right: 2.5%;
+}
+.download_logo img{
+    width: 100%;
+}
+.download_text{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+.download_text span{
+    position: relative;
+    display: block;
+}
+.download_text span em{
+    font-size: 12px;
+    font-style: normal;
+}
+.download_text span em:first-of-type{
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
+.download_text span em:last-of-type{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    color: #999;
+}
+.download_action{
+    float: right;
+    width: 31.88%;
+    height: 100%;
+    background: #bd382a;
+}
+
+.main_header{
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    background: #e03062;
+}
+.main_header .all_select{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+}
+.main_header .all_select span{
+    display: block;
+    width: 20px;
+    height: 18px;
+    margin: 14px 0 0 15px;
+    background: url(../imgs/all_select.png) no-repeat;
+    background-size: 100%;
+}
+
+.main_header .search{
+    position: relative;
+    margin: 8px  50px 0 50px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.main_header .search .search_icon{
+    position: absolute;
+    top: 7px;
+    left: 16px;
+    width: 20px;
+    height: 15px;
+    background: url(../imgs/search_icon.png) no-repeat;
+    background-size: 20px 15px;
+
+}
+.main_header .search .search_icon::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 28px;
+    height: 16px;
+    border-left: 1px solid #ddd;
+}
+.main_header .search .input_left_icon{
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    width: 18px;
+    height: 15px;
+    background: url(../imgs/jd-sprites.png) no-repeat -80px 0;
+    background-size: 200px;
+}
+.main_header .login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+}
+.main_header .search input{
+    position: absolute;
+    width: 65%;
+    top: 6.5px;
+    left: 80px;
+    border: transparent;
+    outline: none;
+}
+.main_header .login span{
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.wrap_slideshow{
+    height: 269px;
+    box-sizing: border-box;
+    padding: 52px 10px 0;
+    background: url(../imgs/slide_bg.jpg) no-repeat;
+    background-size: 100%;
+}
+.wrap_slideshow .slideshow{
+    height: 14rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.wrap_slideshow .slideshow li img{
+    width: 100%;
+    height: 100%;
+}
+
+.wrap_slideshow .pagination{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.wrap_slideshow .pagination ul li::marker{
+    content: "";
+}
+.wrap_slideshow .pagination ul li{
+    float: left;
+    width: .5rem;
+    height: .5rem;
+    background: rgba(240,248,255, 0.6);
+    margin-left: 7px;
+    border-radius: 50%;
+}
+
+.wrap_floor{
+    position: relative;
+    height: 102px;
+    overflow: hidden;
+}
+.wrap_floor div{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+.wrap_floor div img{
+    width: 100%;
+    height: 100%;
+} 
+.wrap_floor .left_contain{
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    width: 9.25rem;
+    height:6rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+ .left_contain img{
+    width: 100%;
+}
+.wrap_floor .right_contain{
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    width: 9.25rem;
+    height: 6rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.right_contain{
+    width:100%;
+}
+.nav{
+    width: 100%;
+    height: 140px;
+    background: url(../imgs/nav_bg.png) no-repeat;
+    background-size: 100%;
+}
+.nav ul li {
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+}
+.nav ul li a {
+    display: block;
+    text-align: center;
+}
+.nav ul li a img{
+    width: 40px;
+}
+.nav ul li a span{
+    display: block;
+    font-size: 12px;
+    margin-top: 2px;
+    color: #666;
+
+}
