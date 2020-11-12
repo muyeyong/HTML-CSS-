@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        父项属性设置
+        flex-direction: 设置主轴方向
+        justify-content: 设置主轴上子元素的排列方式
+        align-items: 设置侧轴上(单行)子元素对其方式
+        align-content: 设置侧轴上(多行)子元素对其方式
+        flow-flow:  设置主轴方向和是否换行
+    -->
+    <style>
+        .father1{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+        }
+        .father1 span{
+             width: 50px;
+             height: 50px;
+             margin-left: 10px;
+             background-color: skyblue;
+        }
+        .father2{
+            display: flex;
+            width: 500px;
+            height: 500px;
+            justify-content: center;
+            background-color: red;
+        }
+        .father2 span{
+            width: 50px;
+            height: 50px;
+            background-color: seagreen;
+        }
+        .father3{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+        }
+        .father3 span{
+            width: 100px;
+            height: 50px;
+            background-color: tomato;
+        }
+        .father4{
+            display: flex;
+            flex-flow: wrap column;
+            width: 500px;
+            height: 500px;
+            background-color: teal;
+
+        }
+        .father4 span{
+            width: 200px;
+            height: 50px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <p>设置主轴方向</p>
+    <div class="father1">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    <p>设置子元素在主轴上的排列方式</p>
+    <div class="father2">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    <p>设置侧轴多行元素对其方式</p>
+    <div class="father3">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+    <p>flex-flow的使用</p>
+    <div class="father4">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex: 元素占剩余空间的份数
+            align-self: 单独设置在侧轴上的位置
+            order: 设置排列顺序
+        */
+        .father1{
+            display: flex;
+            width: 80%;
+            height: 100px;
+            background-color: pink;
+        }
+        .father1 span:nth-child(1){
+            width: 50px;
+            height: 100px;
+            background-color: red;
+        }
+        .father1 span:nth-child(2){
+            flex: 1;
+            background-color: grey;
+        }   
+        .father1 span:nth-child(3){
+            flex: 1;
+            background-color: red;
+        }   
+        .father1 span:nth-child(4){
+            flex: 1;
+            background-color: skyblue;
+        }   
+        .father1 span:nth-child(5){
+            width: 50px;
+            height: 100px;
+            background-color: green;
+        }  
+    </style>
+</head>
+<body>
+    <div class="father1">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+</body>
+</html>
