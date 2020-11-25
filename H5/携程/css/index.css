@@ -235,10 +235,11 @@ li{
 .sub-nav{
     overflow: hidden;
     margin: 0 12px 12px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .sub-nav li{
-    float: left;
-    width: 20%;
+    flex: 20%;
 }
 .sub-nav li a {
     display: flex;
